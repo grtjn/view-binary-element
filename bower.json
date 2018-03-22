@@ -1,0 +1,44 @@
+{
+  "name": "view-binary-element",
+  "version": "0.0.1",
+  "description": "Native Web Component for previewing a few common types of binary files",
+  "main": [
+    "view-binary.html"
+  ],
+  "dependencies": {},
+  "overrides": {},
+  "devDependencies": {},
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "grtjn"
+  ],
+  "homepage": "http://grtjn.github.io/view-binary-element/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grtjn/view-binary-element.git"
+  },
+  "keywords": [
+    "web-component",
+    "javascript",
+    "html5",
+    "view",
+    "file",
+    "marklogic"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".tmp",
+    "build",
+    "test",
+    "coverage",
+    "gulpfile.js",
+    "karma.conf.js",
+    "package.json"
+  ],
+  "resolutions": {}
+}
