@@ -32,7 +32,7 @@ Static example:
       height: 32px;
     }
     </style>
-
+ 
     <view-binary class="audio" src="data/sample-music.mp3" type="audio/mpeg" title="sample-music.mp3">
       <a slot="fallback" href="data/sample-music.mp3" target="_blank" download>Download sample-music.mp3</a>
     </view-binary>
@@ -42,13 +42,13 @@ Embedding in Vue.js:
 - Import or include the web component in your index.html
 - Add `view-binary` to ignoreElements to stop it from squeaking:
 
-    Vue.config.ignoredElements = ["view-binary"];
+        Vue.config.ignoredElements = ["view-binary"];
 
 - Use it in any component:
 
-    <view-binary :src="viewUri" :type="contentType" :title="fileName">
-      <a slot="fallback" class="btn btn-default" :href="downloadUri" target="_blank" download>Download {{ fileName }}</a>
-    </view-binary>
+        <view-binary :src="viewUri" :type="contentType" :title="fileName">
+          <a slot="fallback" class="btn btn-default" :href="downloadUri" target="_blank" download>Download {{ fileName }}</a>
+        </view-binary>
 
 ## Test locally
 
