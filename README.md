@@ -1,6 +1,8 @@
 # view-binary-element
 Native Web Component for previewing a few common types of binary files
 
+This is essentially a refactored version of https://github.com/grtjn/view-file-ng to eliminate AngularJS. Not yet as feature rich though.
+
 Disclaimer: Work in Progress, and not tested in production. Feedback welcome though.
 
 Check https://caniuse.com/ to verify how well Web Components is covered by current browsers. This component uses Custom Elements v1, (optionally) HTML Imports, HTML Templates, Shadow DOM v1 (gracefull decay would be possible).
