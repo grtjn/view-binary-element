@@ -1,5 +1,19 @@
 # Change Log
 
+## [0.0.2](https://github.com/grtjn/view-binary-element/tree/0.0.2) (2018-06-07)
+[Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.1...0.0.2)
+
+**Implemented enhancements:**
+
+- Add HTML Imports polyfill for demo site [\#6](https://github.com/grtjn/view-binary-element/issues/6)
+- Document how to use in AngularJS [\#12](https://github.com/grtjn/view-binary-element/issues/12)
+- Gracefull decay for lack of Shadow DOM support [\#7](https://github.com/grtjn/view-binary-element/issues/7)
+
+**Fixed bugs:**
+
+- HTML imports is removed from webcomponents in v2 [\#11](https://github.com/grtjn/view-binary-element/issues/11)
+- currentScript can be null \(in Chrome\) [\#10](https://github.com/grtjn/view-binary-element/issues/10)
+
 ## [0.0.1](https://github.com/grtjn/view-binary-element/tree/0.0.1) (2018-03-22)
 **Implemented enhancements:**
 
