@@ -82,6 +82,9 @@
 
   (function() {
 
+    // Make sure to look inside this html fragement (in case of true html import)
+    const doc = document.currentScript ? (document.currentScript.ownerDocument || document) : document;
+
     // Inspired by https://developers.google.com/web/fundamentals/web-components/
 
     class ViewBinary extends HTMLElement {
@@ -215,9 +218,6 @@
           // instant stub polyfill for shadowRoot
           this.shadowRoot = this;
         }
-
-        // Make sure to look inside this html fragement (in case of true html import)
-        const doc = document.currentScript ? (document.currentScript.ownerDocument || document) : document;
 
         // get and append template
         const template = doc
