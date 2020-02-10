@@ -1,13 +1,20 @@
 # Change Log
 
+## [0.0.3](https://github.com/grtjn/view-binary-element/tree/0.0.3) (2020-02-10)
+[Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.2...0.0.3)
+
+**Implemented enhancements:**
+
+- Toggle to disable shadowroot [\#13](https://github.com/grtjn/view-binary-element/issues/13)
+
 ## [0.0.2](https://github.com/grtjn/view-binary-element/tree/0.0.2) (2018-06-07)
 [Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.1...0.0.2)
 
 **Implemented enhancements:**
 
-- Add HTML Imports polyfill for demo site [\#6](https://github.com/grtjn/view-binary-element/issues/6)
 - Document how to use in AngularJS [\#12](https://github.com/grtjn/view-binary-element/issues/12)
 - Gracefull decay for lack of Shadow DOM support [\#7](https://github.com/grtjn/view-binary-element/issues/7)
+- Add HTML Imports polyfill for demo site [\#6](https://github.com/grtjn/view-binary-element/issues/6)
 
 **Fixed bugs:**
 
