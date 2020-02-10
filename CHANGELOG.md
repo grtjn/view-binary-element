@@ -5,6 +5,7 @@
 
 **Implemented enhancements:**
 
+- Consider adding max-width 100% on img by default [\#14](https://github.com/grtjn/view-binary-element/issues/14)
 - Toggle to disable shadowroot [\#13](https://github.com/grtjn/view-binary-element/issues/13)
 
 ## [0.0.2](https://github.com/grtjn/view-binary-element/tree/0.0.2) (2018-06-07)
