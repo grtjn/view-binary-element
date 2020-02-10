@@ -11,6 +11,9 @@
       width: 100%;
       overflow: auto;
     }
+    .view-binary #view-binary-picture img {
+      max-width: 100%;
+    }
 
     /* fontawesome (copied because of Shadow DOM isolation) */
     .fa {
@@ -76,7 +79,7 @@
 
 <script>
   // Usage:
-  // <view-binary src="" type="" title="">
+  // <view-binary src="" type="" title="" shadow="true">
   //   <a class="btn btn-default" href="" target="_blank" download>Download</a>
   // </view-binary>
 
@@ -90,7 +93,7 @@
     class ViewBinary extends HTMLElement {
 
       static get observedAttributes() {
-        return ["src", "type", "title"];
+        return ["src", "type", "title", "shadow"];
       }
 
       /**
@@ -109,6 +112,7 @@
         this._src = undefined;
         this._type = undefined;
         this._title = undefined;
+        this._shadow = true;
 
         // initialize template placeholders
         this.$loading = undefined;
@@ -169,6 +173,10 @@
             this._title = newValue;
             break;
           }
+          case "shadow": {
+            this._shadow = '' + newValue === 'true';
+            break;
+          }
         }
 
         this._updateRendering();
@@ -209,9 +217,20 @@
         return this._title;
       }
 
+      set shadow(value) {
+        if (value)
+          this.setAttribute('shadow', value);
+        else
+          this.removeAttribute('shadow');
+      }
+
+      get shadow() {
+        return this._shadow;
+      }
+
       // initialize contents of custom element
       _initialize() {
-        if (this.attachShadow) {
+        if (this._shadow && this.attachShadow) {
           // enable Shadow DOM
           this.attachShadow({mode: 'open'});
         } else {
@@ -241,6 +260,7 @@
         this._upgradeProperty("src");
         this._upgradeProperty("type");
         this._upgradeProperty("title");
+        this._upgradeProperty("shadow");
 
         // initialize rendering
         this._updateRendering();
