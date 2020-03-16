@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.0.4](https://github.com/grtjn/view-binary-element/tree/0.0.4) (2020-03-16)
+[Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.3...0.0.4)
+
+**Fixed bugs:**
+
+- Robustness issue with quick remount of component [\#15](https://github.com/grtjn/view-binary-element/issues/15)
+
 ## [0.0.3](https://github.com/grtjn/view-binary-element/tree/0.0.3) (2020-02-10)
 [Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.2...0.0.3)
 
