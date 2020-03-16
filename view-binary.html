@@ -287,7 +287,8 @@
       // update rendering of placeholders
       _updateRendering() {
         if (this.shadowRoot) {
-          if (this.src !== undefined && this.type !== undefined) {
+          if (this.src !== undefined && this.type !== undefined
+              && this.src !== null && this.type !== null) {
             this.$loading.hidden = true;
             this.$viewer.hidden = false;
 
@@ -298,7 +299,9 @@
 
             // there can be only one fallback slot, move it around
             var slot = this.shadowRoot.querySelector("#fallback");
-            slot.parentNode.removeChild(slot);
+            if (slot) {
+              slot.parentNode.removeChild(slot);
+            }
 
             if (this.type.match(/^audio\//)) {
               this.$audio.hidden = false;

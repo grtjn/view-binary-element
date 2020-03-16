@@ -1,6 +1,6 @@
 {
   "name": "view-binary-element",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Native Web Component for previewing a few common types of binary files",
   "dependencies": {},
   "devDependencies": {},
