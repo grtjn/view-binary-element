@@ -1,5 +1,16 @@
 # Change Log
 
+## [0.0.5](https://github.com/grtjn/view-binary-element/tree/0.0.5) (2020-11-18)
+[Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.4...0.0.5)
+
+**Implemented enhancements:**
+
+- Move over progress icons to Fontawesome 5 [\#9](https://github.com/grtjn/view-binary-element/issues/9)
+
+**Fixed bugs:**
+
+- HTML-loader strict checking [\#16](https://github.com/grtjn/view-binary-element/issues/16)
+
 ## [0.0.4](https://github.com/grtjn/view-binary-element/tree/0.0.4) (2020-03-16)
 [Full Changelog](https://github.com/grtjn/view-binary-element/compare/0.0.3...0.0.4)
 
