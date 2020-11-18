@@ -16,16 +16,16 @@
     }
 
     /* fontawesome (copied because of Shadow DOM isolation) */
+    /* Replaced fontawesome font for unicode character to eliminate peer dependency */
     .fa {
       display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: inherit;
+      font: normal normal normal 14px/1 Lucida Sans Unicode;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
     .fa-refresh:before {
-      content: "\F021";
+      content: "\21bb";
     }
     .fa-refresh[hidden]:before {
       content: "";
@@ -62,15 +62,15 @@
       </slot>
     </div>
     <div id="view-binary-viewer">
-      <audio id="view-binary-audio" controls preload="metadata" src="" title="">
+      <audio id="view-binary-audio" controls preload="metadata" title="">
         <slot id="fallback" name="fallback"></slot>
       </audio>
-      <video id="view-binary-video" controls preload="metadata" src="" title="" playsinline>
+      <video id="view-binary-video" controls preload="metadata" title="" playsinline>
       </video>
       <picture id="view-binary-picture">
-        <img src="" alt="">
+        <img alt="">
       </picture>
-      <object id="view-binary-object" data="" type="" title="">
+      <object id="view-binary-object" type="" title="">
       </object>
     </div>
     <div id="view-binary-spacer"></div>
